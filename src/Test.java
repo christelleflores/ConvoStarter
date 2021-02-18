@@ -14,8 +14,32 @@ public class Test {
 			System.out.println("School");
 			System.out.println("Animals");
 			System.out.println("Cars");
-			
+
 			String response2 = scanner.nextLine();
+
+			if (response2.equals("School")) {
+				System.out.println(
+						"Do you REALLY want to talk about school right now? School is stressful. Are you okay?");
+				String schoolResponse = scanner.nextLine();
+				if (schoolResponse.equals("Yes")) {
+					System.out.println("Okay good. Just checking. Keep it up buddy!");
+				} else if (schoolResponse.equals("No")) {
+					System.out.println("Aw. I'm sorry. Hope it gets better");
+				}
+
+			} else if (response2.equals("Animals")) {
+				System.out.println("Aw yay! Do you like dogs?");
+				String dog = scanner.nextLine();
+				if (dog.equals("Yes")) {
+					System.out.println("Amazing. Spectacular. You are a great person.");
+				} else if (dog.equals("No")) {
+					System.out.println("Um. No, we can't continue this conversation.");
+				}
+			} else if (response2.equals("Cars")) {
+				System.out.println("I know nothing about cars, give me a random car fact.");
+				String carFact = scanner.nextLine();
+				System.out.println("Cool! The more you know! :)");
+			}
 		}
 
 	}
