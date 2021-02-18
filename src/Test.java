@@ -40,6 +40,10 @@ public class Test {
 				String carFact = scanner.nextLine();
 				System.out.println("Cool! The more you know! :)");
 			}
+			
+			System.out.println("Is there anything else you would like to say?");
+			String response3 = scanner.nextLine();
+			System.out.println("If you said no, cool. If you said yes, sorry, but I have nothing else to say. Goodbye!");
 		}
 
 	}
