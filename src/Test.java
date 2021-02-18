@@ -17,7 +17,7 @@ public class Test {
 
 			String response2 = scanner.nextLine();
 
-			if (response2.equals("School")) {
+			if (response2.toLowerCase().equals("school")) {
 				System.out.println(
 						"Do you REALLY want to talk about school right now? School is stressful. Are you okay?");
 				String schoolResponse = scanner.nextLine();
@@ -27,7 +27,7 @@ public class Test {
 					System.out.println("Aw. I'm sorry. Hope it gets better");
 				}
 
-			} else if (response2.equals("Animals")) {
+			} else if (response2.toLowerCase().equals("animals")) {
 				System.out.println("Aw yay! Do you like dogs?");
 				String dog = scanner.nextLine();
 				if (dog.equals("Yes")) {
@@ -35,7 +35,7 @@ public class Test {
 				} else if (dog.equals("No")) {
 					System.out.println("Um. No, we can't continue this conversation.");
 				}
-			} else if (response2.equals("Cars")) {
+			} else if (response2.toLowerCase().equals("cars")) {
 				System.out.println("I know nothing about cars, give me a random car fact.");
 				String carFact = scanner.nextLine();
 				System.out.println("Cool! The more you know! :)");
