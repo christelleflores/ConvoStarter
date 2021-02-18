@@ -21,18 +21,18 @@ public class Test {
 				System.out.println(
 						"Do you REALLY want to talk about school right now? School is stressful. Are you okay?");
 				String schoolResponse = scanner.nextLine();
-				if (schoolResponse.equals("Yes")) {
+				if (schoolResponse.toLowerCase().equals("yes")) {
 					System.out.println("Okay good. Just checking. Keep it up buddy!");
-				} else if (schoolResponse.equals("No")) {
+				} else if (schoolResponse.toLowerCase().equals("no")) {
 					System.out.println("Aw. I'm sorry. Hope it gets better");
 				}
 
 			} else if (response2.toLowerCase().equals("animals")) {
 				System.out.println("Aw yay! Do you like dogs?");
 				String dog = scanner.nextLine();
-				if (dog.equals("Yes")) {
+				if (dog.toLowerCase().equals("yes")) {
 					System.out.println("Amazing. Spectacular. You are a great person.");
-				} else if (dog.equals("No")) {
+				} else if (dog.toLowerCase().equals("no")) {
 					System.out.println("Um. No, we can't continue this conversation.");
 				}
 			} else if (response2.toLowerCase().equals("cars")) {
