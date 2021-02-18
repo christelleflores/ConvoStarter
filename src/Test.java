@@ -11,11 +11,9 @@ public class Test {
 			System.out.println("Okay... bye I guess.");
 		} else if (response.toLowerCase().equals("yes")) {
 			System.out.println("Great! What would you like to talk about?");
-
-			String[] convos = new String[3];
-			convos[0] = "School";
-			convos[1] = "Animals";
-			convos[2] = "Cars";
+			System.out.println("School");
+			System.out.println("Animals");
+			System.out.println("Cars");
 			
 			String response2 = scanner.nextLine();
 		}
